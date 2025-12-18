@@ -6,14 +6,20 @@ from dotenv import load_dotenv
 import os
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field, ConfigDict, EmailStr
+from pydantic import BaseModel, ConfigDict, EmailStr
 from typing import List
 import uuid
 from datetime import datetime, timezone, timedelta
 import bcrypt
 import jwt
-from emergentintegrations.llm.chat import LlmChat, UserMessage
 import json
+
+# ================== OPTIONAL EMERGENT IMPORT ==================
+try:
+    from emergentintegrations.llm.chat import LlmChat, UserMessage
+except ImportError:
+    LlmChat = None
+    UserMessage = None
 
 # ================== ENV LOADING ==================
 ROOT_DIR = Path(__file__).parent
@@ -111,6 +117,20 @@ def verify_token(credentials: HTTPAuthorizationCredentials = Depends(security)):
 
 # ================== AI ANALYSIS ==================
 async def analyze_code_with_ai(language, category, problem_description, code):
+    # 🔴 If Emergent lib is not available, disable AI safely
+    if LlmChat is None or UserMessage is None:
+        return {
+            "timeComplexity": "AI disabled in production",
+            "spaceComplexity": "AI disabled in production",
+            "edgeCases": [],
+            "codeStructure": "AI disabled",
+            "optimizationSuggestions": [],
+            "interviewReadiness": "AI disabled",
+            "rating": "Beginner",
+            "optimizedCode": code,
+            "interviewQuestions": []
+        }
+
     try:
         api_key = os.environ.get("EMERGENT_LLM_KEY")
         if not api_key:
