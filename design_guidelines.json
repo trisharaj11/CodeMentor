@@ -1,0 +1,141 @@
+{
+  "identity": {
+    "name": "CodeMentor AI",
+    "mission": "To simulate a ruthless but fair technical interviewer, turning spaghetti code into production-grade artifacts.",
+    "aesthetic": "Cyber-Minimalism / Dark Mode Terminal",
+    "emotional_tone": "Precise, Intelligent, High-Velocity, Encouraging"
+  },
+  "typography": {
+    "primary_font": "Manrope",
+    "secondary_font": "JetBrains Mono",
+    "usage": {
+      "headings": "font-mono tracking-tight font-bold",
+      "body": "font-sans leading-relaxed",
+      "code": "font-mono text-sm"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Manrope:wght@400;500;700&display=swap"
+  },
+  "colors": {
+    "mode": "dark",
+    "palette": {
+      "background": "#09090B",
+      "surface": "#18181B",
+      "surface_highlight": "#27272A",
+      "primary": "#7C3AED",
+      "primary_glow": "rgba(124, 58, 237, 0.5)",
+      "secondary": "#10B981",
+      "accent": "#F59E0B",
+      "text_primary": "#FAFAFA",
+      "text_secondary": "#A1A1AA",
+      "border": "#27272A",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#F59E0B"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.15), transparent 70%)",
+      "card_border": "linear-gradient(to bottom right, rgba(255,255,255,0.1), rgba(255,255,255,0.02))"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "default": "bg-zinc-950/70 backdrop-blur-xl border border-white/10",
+      "heavy": "bg-black/80 backdrop-blur-2xl border border-white/5"
+    },
+    "shadows": {
+      "neon": "0 0 20px -5px rgba(124, 58, 237, 0.3)",
+      "subtle": "0 4px 6px -1px rgba(0, 0, 0, 0.5)"
+    },
+    "borders": {
+      "subtle": "border border-zinc-800",
+      "highlight": "border border-violet-500/30"
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "grid": "grid-cols-1 md:grid-cols-12 gap-8",
+      "spacing": "p-8 md:p-24",
+      "hero_section": "min-h-[90vh] flex items-center justify-center relative overflow-hidden"
+    },
+    "dashboard": {
+      "grid": "grid-cols-1 md:grid-cols-4 gap-6",
+      "container": "max-w-[1600px] mx-auto p-6",
+      "card_style": "bg-zinc-900/50 border border-zinc-800 rounded-xl p-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-violet-600 hover:bg-violet-700 text-white font-medium px-6 py-3 rounded-lg transition-all shadow-[0_0_15px_rgba(124,58,237,0.3)] hover:shadow-[0_0_25px_rgba(124,58,237,0.5)]",
+      "secondary": "bg-zinc-800 hover:bg-zinc-700 text-white border border-zinc-700 px-6 py-3 rounded-lg transition-all",
+      "ghost": "text-zinc-400 hover:text-white hover:bg-white/5 px-4 py-2 rounded-lg transition-all"
+    },
+    "inputs": {
+      "default": "bg-zinc-950/50 border border-zinc-800 focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/50 rounded-lg px-4 py-3 text-zinc-100 placeholder:text-zinc-600 transition-all outline-none"
+    },
+    "cards": {
+      "review_card": "group relative overflow-hidden bg-zinc-900/40 border border-zinc-800 hover:border-violet-500/30 transition-all duration-300 rounded-xl p-6"
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1762279389053-d5a30239ae45?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjQyMTd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBkYXRhJTIwZmxvd3xlbnwwfHx8fDE3NjU5Nzk1MDh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract neon lines and shapes with glow, use as background overlay with low opacity",
+      "category": "background"
+    },
+    "feature_analysis": {
+      "url": "https://images.unsplash.com/photo-1762279389051-c4b29456fbc7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjQyMTd8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBkYXRhJTIwZmxvd3xlbnwwfHx8fDE3NjU5Nzk1MDh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract lines and graphs, use for 'Deep Analysis' feature section",
+      "category": "feature"
+    },
+    "feature_network": {
+      "url": "https://images.unsplash.com/photo-1762279388956-1c098163a2a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjQyMTd8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBkYXRhJTIwZmxvd3xlbnwwfHx8fDE3NjU5Nzk1MDh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Neon lines forming digital landscape, use for 'Interview Mode' feature",
+      "category": "feature"
+    },
+    "team_1": {
+      "url": "https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg",
+      "description": "Diverse team member portrait",
+      "category": "team"
+    },
+    "team_2": {
+      "url": "https://images.pexels.com/photos/7988218/pexels-photo-7988218.jpeg",
+      "description": "Diverse team member portrait",
+      "category": "team"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-lg",
+    "page_enter": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+  },
+  "accessibility": {
+    "contrast_check": "Ensure all text on dark backgrounds is at least Zinc-400 or lighter.",
+    "focus_states": "focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-zinc-950",
+    "reduced_motion": "motion-reduce:transition-none motion-reduce:animate-none"
+  },
+  "instructions_to_main_agent": [
+    "Use 'JetBrains Mono' for all headings, code snippets, and metrics.",
+    "Use 'Manrope' for body text and UI labels.",
+    "Implement a 'Cyber-Minimalist' aesthetic: lots of black space, sharp borders, and neon accents.",
+    "For the Code Editor, use a custom Monaco theme that matches the #09090B background.",
+    "Do NOT use standard Shadcn cards. Use the custom 'review_card' style defined in components.",
+    "Ensure all interactive elements have data-testid attributes.",
+    "Use the provided image URLs for backgrounds and feature sections. Do not use placeholders.",
+    "The file extension for components should be .jsx or .js as per project structure.",
+    "Avoid gradients on text unless it's a very large hero title.",
+    "Use 'sonner' for toast notifications."
+  ],
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all.",
+    "You MUST NOT center align the app container.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠 etc for icons.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations."
+  ]
+}
